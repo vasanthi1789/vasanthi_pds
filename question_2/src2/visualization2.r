@@ -6,4 +6,4 @@ x <- c(89,190,52,26,158)
 la<- c("group A", "group B", "group C", "group D","group E")
 
 # Plot the chart.
-pie(x,la,main="pie chart for race/ethnicity")
+pie(x,la,main="pie chart for race/ethnicity",col=c("red","green","blue","yellow","purple"))
