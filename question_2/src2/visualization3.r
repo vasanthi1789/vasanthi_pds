@@ -1,1 +1,5 @@
-
+library(readr)
+StudentsPerformance <- read_csv("C:/Users/venka/OneDrive/Desktop/vaasu/StudentsPerformance.csv")
+View(StudentsPerformance)
+attach(StudentsPerformance)
+boxplot(`reading score`,main="Box Plot for math score",col='green')
