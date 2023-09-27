@@ -1,1 +1,5 @@
-
+library(readr)
+StudentsPerformance <- read_csv("C:/Users/venka/OneDrive/Desktop/vaasu/StudentsPerformance.csv")
+View(StudentsPerformance)
+attach(StudentsPerformance)
+plot(`math score`,`reading score`,main="Mathscore Vs Readingscore",col="blue")
