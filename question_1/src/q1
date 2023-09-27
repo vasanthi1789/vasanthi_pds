@@ -1,9 +1,7 @@
-
-
 # Load necessary libraries
-#library(caret)
+library(caret)
 # Load data
-raw_yield_data <- read.csv("C:/Users/User/Desktop/PDS_DATASET.csv") # Remove rows with missing values
+raw_yield_data <- read.csv("C:/Users/venka/OneDrive/Desktop/vaasu/PDS DATASET.csv") # Remove rows with missing values
 cleaned_yield_data <- na.omit(raw_yield_data)
 # Convert Frailty column to a factor
 cleaned_yield_data$Frailty <- as.factor(cleaned_yield_data$Frailty)
@@ -26,4 +24,4 @@ dt_pred <- predict(dt_model, newdata = test)
 
 confusionMatrix(lr_pred, test$Frailty)
 confusionMatrix(svm_pred, test$Frailty)
-confusionMatrix(dt_pred, test$Frailty)
+confusionMatrix(dt_pred,test$Frailty)
